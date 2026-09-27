@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Sivaharsha Sottu</title>
+  <meta name="description" content="Projects by Sivaharsha Sottu: TTD booking autofill automation, a 3D game-like portfolio, chess platform and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D1420'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='bold' fill='%23E3B448' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">sottu<em>.dev</em></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <span class="section-label rise d1">Portfolio</span>
+      <h2 class="section-title rise d1">Things I've built<br>and shipped.</h2>
+      <p class="lede rise d2" style="margin-bottom:30px">
+        Every project here started with a real need — mine or my family's — not a tutorial.
+        Details, decisions and rough edges included.
+      </p>
+      <a class="btn btn-gold rise d3" href="resume.pdf" download style="margin-bottom:26px">Download resume (PDF)</a>
+    </div>
+  </section>
+
+  <!-- ============ 01 TTD ============ -->
+  <section class="wrap" id="ttd-autofill">
+    <div class="proj-row">
+      <div class="side rise d1">
+        <div class="big-idx">01</div>
+        <div>status — <span style="color:var(--emerald)">shipped, in daily use</span></div>
+        <div style="margin-top:6px">role — solo builder</div>
+        <div style="margin-top:6px">users — my family (and counting)</div>
+      </div>
+      <div class="rise d2">
+        <h3>TTD Seva Booking Autofill</h3>
+        <p>A browser userscript that automates the repetitive parts of booking seva tickets
+           on the TTD portal — the parts that cost minutes per pilgrim during high-demand
+           booking windows.</p>
+        <ul class="bullets">
+          <li><b>Full-form automation:</b> pilgrim details, ID/Aadhaar selections, email
+              presets and gender fields across multiple pilgrims, filled from saved presets.</li>
+          <li><b>Floating in-page UI</b> to pick presets and trigger fills — no extensions
+              store, no server, everything runs client-side.</li>
+          <li><b>Redesign-proof selectors:</b> re-adapted the DOM selectors after the portal's
+              layout changed, keeping the tool working across old and new site versions.</li>
+          <li><b>Deliberate limits:</b> no automated login or captcha solving — the user stays
+              in control; the tool only removes repetitive typing.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">JavaScript</span><span class="tag">DOM scripting</span>
+          <span class="tag">Userscripts</span><span class="tag">Browser automation</span>
+        </div>
+        <div class="row-links">
+          <a href="https://github.com/Godspirit4U" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 3D portfolio ============ -->
+  <section class="wrap" id="portfolio-3d">
+    <div class="proj-row">
+      <div class="side rise d1">
+        <div class="big-idx">02</div>
+        <div>status — <span style="color:var(--gold)">in progress</span></div>
+        <div style="margin-top:6px">role — design + build</div>
+        <div style="margin-top:6px">the hard part — engine loading</div>
+      </div>
+      <div class="rise d2">
+        <h3>3D Portfolio Experience</h3>
+        <p>A portfolio you don't scroll so much as travel through — a student character walks
+           a 3D path, stops at each section and looks around while my profile appears along
+           the journey.</p>
+        <ul class="bullets">
+          <li><b>Scroll-driven movement:</b> the visitor's scroll controls the character's
+              journey, giving a clear, understandable sequence through the content.</li>
+          <li><b>Real debugging:</b> chased down a 3D engine loading failure where the engine
+              wouldn't initialize — and built an accessible fallback portfolio so every
+              visitor still gets a working site while it's fixed.</li>
+          <li><b>Cinematic detail:</b> the character stops, looks around and the sections
+              reveal themselves — the portfolio behaves like a small game.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">JavaScript</span><span class="tag">3D web</span>
+          <span class="tag">Scroll-driven UX</span><span class="tag">Accessibility</span>
+        </div>
+        <div class="row-links">
+          <a href="https://github.com/Godspirit4U" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 chess ============ -->
+  <section class="wrap" id="chess-platform">
+    <div class="proj-row">
+      <div class="side rise d1">
+        <div class="big-idx">03</div>
+        <div>status — <span style="color:var(--gold)">in design</span></div>
+        <div style="margin-top:6px">role — product design + build</div>
+        <div style="margin-top:6px">inspiration — too many one-board clones</div>
+      </div>
+      <div class="rise d2">
+        <h3>Chess Web Platform</h3>
+        <p>A chess website with ambitions beyond “play the bot”: tournaments, player
+           profiles and the social side of chess that most student chess projects skip.</p>
+        <ul class="bullets">
+          <li><b>Requirements before code:</b> gathering the full product feature set —
+              tournament formats, pairings, player management — before implementation begins.</li>
+          <li><b>Built around real play:</b> designed as a place people return to compete,
+              not a one-off demo board.</li>
+          <li><b>Personal angle:</b> I play chess regularly — this is the project where my
+              hobby and my degree collide.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Product design</span><span class="tag">Web</span>
+          <span class="tag">Tournaments</span><span class="tag">Chess</span>
+        </div>
+        <div class="row-links">
+          <a href="https://github.com/Godspirit4U" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 profile site ============ -->
+  <section class="wrap" id="profile-site" style="padding-bottom:80px">
+    <div class="proj-row" style="border-bottom:none">
+      <div class="side rise d1">
+        <div class="big-idx">04</div>
+        <div>status — <span style="color:var(--emerald)">shipped</span></div>
+        <div style="margin-top:6px">role — design + build</div>
+        <div style="margin-top:6px">stack — vanilla everything</div>
+      </div>
+      <div class="rise d2">
+        <h3>Student Profile Website</h3>
+        <p>Minimal, clean, blue-themed student profile pages — designed and written from
+           scratch, and deliberately not the kind of page that looks auto-generated.</p>
+        <ul class="bullets">
+          <li><b>Hand-written HTML/CSS/JS:</b> no page builders, no template Frankensteins —
+              every layout decision is mine.</li>
+          <li><b>Minimal by choice:</b> blue palette, generous whitespace, typography that
+              respects the reader.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <div class="row-links">
+          <a href="https://github.com/Godspirit4U" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="cta-band rise d2">
+        <h2>Want the full story?</h2>
+        <p>The resume packs all of this into one page — projects, skills and coursework.</p>
+        <a class="btn btn-gold" href="resume.pdf" download>Download resume <span class="arrow">↓</span></a>
+        <span style="display:inline-block;width:12px"></span>
+        <a class="btn btn-ghost" href="contact.html">Contact me</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Sivaharsha Sottu — written by hand, no templates</span>
+    <span>
+      <a href="https://github.com/Godspirit4U" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/sivaharsha-sottu" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="mailto:sivaharsha.sottu@gmail.com">Email</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
